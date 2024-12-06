@@ -26,7 +26,63 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="vistas/css/style.css" />
+    <style>
+        
+/* Estilo para el primer navbar */
+.navarqueso {
+  position: fixed; /* Fijo en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* Asegura que el navbar esté encima del carrusel */
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo negro con algo de transparencia */
+  border-bottom: 2px solid black; /* Borde negro */
+  padding: 10px 0; /* Ajuste de padding */
+  backdrop-filter: blur(5px); /* Desenfoque de fondo */
+}
+
+/* Estilo para el segundo navbar */
+.navbar-expand-lg {
+  position: fixed; /* Fijo en la parte superior, debajo del primer navbar */
+  top: 56px; /* Ajusta según la altura del primer navbar */
+  left: 0;
+  width: 100%;
+  z-index: 1049; /* Justo debajo del primer navbar */
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con transparencia */
+  backdrop-filter: blur(5px); /* Desenfoque del fondo */
+  padding: 10px 0; /* Ajuste de padding */
+}
+
+/* Ajuste general del carrusel */
+.carrusel-principal {
+  position: absolute; /* El carrusel se coloca detrás del navbar */
+  top: 0; /* Empieza en la parte superior */
+  left: 0;
+  width: 100%;
+  height: 100vh; /* El carrusel ocupa toda la altura de la ventana */
+  z-index: 1; /* Detrás de los navbars */
+}
+
+/* Imágenes del carrusel */
+.carrusel-principal .carousel-inner img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho */
+  height: 100%; /* Asegura que las imágenes llenen el contenedor */
+  object-fit: cover; /* Recorta las imágenes para que se ajusten sin distorsión */
+}
+
+/* Opcional: Estilo para los indicadores del carrusel */
+.carrusel-principal .carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.8); /* Color oscuro */
+  border: none;
+}
+
+.carrusel-principal .carousel-indicators .active {
+  background-color: #007bff; /* Color azul para el indicador activo */
+}
+
+
+
+    </style>
   </head>
 
   <body>
@@ -130,73 +186,7 @@
       </div>
     </div>
 
-    <div class="event-somos">
-      <div class="event-container-somos">
-        <div class="event-somos-item">
-          <div class="event-icon-somos">
-            <img
-              src="Vistas/img/imgsomos/image.png"
-              alt="Concurso "
-            />
-            <!-- Reemplaza con tu imagen -->
-          </div>
-          <div class="event-title-somos">
-            Concurso Internacional de Quesos Artesanos
-          </div>
-          <div class="event-description-somos">
-            Historia, tradición y sabor: el mayor concurso de quesos
-            certificados del mundo
-          </div>
-        </div>
-        <div class="event-somos-item">
-          <div class="event-icon-somos">
-            <img
-              src="Vistas/img/imgsomos/image.png"
-              alt="Foro "
-            />
-            <!-- Reemplaza con tu imagen -->
-          </div>
-          <div class="event-title-somos">
-            Foro Internacional de Agroindustria y Productos de la Agricultura
-            Familiar
-          </div>
-          <div class="event-description-somos">
-            Valoración, reconocimiento y oportunidades de negocio para
-            productores
-          </div>
-        </div>
-        <div class="event-somos-item">
-          <div class="event-icon-somos">
-            <img
-              src="Vistas/img/imgsomos/image.png"
-              alt="Feria "
-            />
-            <!-- Reemplaza con tu imagen -->
-          </div>
-          <div class="event-title-somos">
-            Feria Internacional de AgroNegocios
-          </div>
-          <div class="event-description-somos">
-            Apoyo al desarrollo e impulso en la búsqueda de mejoras a la cadena
-            productiva de leche y quesos
-          </div>
-        </div>
-        <div class="event-somos-item">
-          <div class="event-icon-somos">
-            <img
-              src="Vistas/img/imgsomos/image.png"
-              alt="Villa"
-            />
-            <!-- Reemplaza con tu imagen -->
-          </div>
-          <div class="event-title-somos">Villa Gastronómica y Cultural</div>
-          <div class="event-description-somos">
-            Un brindis por lo mejor: quesos, buena comida y música de calidad
-          </div>
-        </div>
-      </div>
-    </div>
-
+ 
     <!-- ICONS XD -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
     <script
