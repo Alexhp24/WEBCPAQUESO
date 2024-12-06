@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        .event-somos {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            max-width: 1200px; /* Máximo ancho del contenedor */
+            margin: 20px auto; /* Centrado automático y espacio en los márgenes */
+        }
+        .event-container-somos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+        .event-somos-item {
+            /* background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+            text-align: center;
+        }
+        .event-icon-somos img {
+            width: 60px; /* Ajusta el tamaño de la imagen */
+            height: 60px; /* Ajusta el tamaño de la imagen */
+            margin-bottom: 15px;
+        }
+        .event-title-somos {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: red;
+        }
+        .event-description-somos {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .event-container-somos {
+                grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="event-somos">
+        <div class="event-container-somos">
+            <div class="event-somos-item">
+                <div class="event-icon-somos">
+                    <img src="queso-icono.png" alt="Concurso Internacional de Quesos Artesanos"> <!-- Reemplaza con tu imagen -->
+                </div>
+                <div class="event-title-somos">Concurso Internacional de Quesos Artesanos</div>
+                <div class="event-description-somos">Historia, tradición y sabor: el mayor concurso de quesos certificados del mundo</div>
+            </div>
+            <div class="event-somos-item">
+                <div class="event-icon-somos">
+                    <img src="casa-icono.png" alt="Foro Internacional de Agroindustria y Productos de la Agricultura Familiar"> <!-- Reemplaza con tu imagen -->
+                </div>
+                <div class="event-title-somos">Foro Internacional de Agroindustria y Productos de la Agricultura Familiar</div>
+                <div class="event-description-somos">Valoración, reconocimiento y oportunidades de negocio para productores</div>
+            </div>
+            <div class="event-somos-item">
+                <div class="event-icon-somos">
+                    <img src="cafe-icono.png" alt="Feria Internacional de AgroNegocios"> <!-- Reemplaza con tu imagen -->
+                </div>
+                <div class="event-title-somos">Feria Internacional de AgroNegocios</div>
+                <div class="event-description-somos">Apoyo al desarrollo e impulso en la búsqueda de mejoras a la cadena productiva de leche y quesos</div>
+            </div>
+            <div class="event-somos-item">
+                <div class="event-icon-somos">
+                    <img src="nota-musical-icono.png" alt="Villa Gastronómica y Cultural"> <!-- Reemplaza con tu imagen -->
+                </div>
+                <div class="event-title-somos">Villa Gastronómica y Cultural</div>
+                <div class="event-description-somos">Un brindis por lo mejor: quesos, buena comida y música de calidad</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

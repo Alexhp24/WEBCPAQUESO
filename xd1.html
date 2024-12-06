@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .main-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .event-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            gap: 20px;
+            padding: 20px;
+        }
+        .event {
+            padding: 20px;
+            text-align: center;
+        }
+        .event-icon {
+            font-size: 40px;
+            color: #e76f51;
+            margin-bottom: 15px;
+        }
+        .event-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .event-description {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .event-container {
+                grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="event-container">
+            <div class="event">
+                <div class="event-icon">🧀</div>
+                <div class="event-title">Concurso Internacional de Quesos Artesanos</div>
+                <div class="event-description">Historia, tradición y sabor: el mayor concurso de quesos certificados del mundo</div>
+            </div>
+
+            <div class="event">
+                <div class="event-icon">🏠</div>
+                <div class="event-title">Foro Internacional de Agroindustria y Productos de la Agricultura Familiar</div>
+                <div class="event-description">Valoración, reconocimiento y oportunidades de negocio para productores</div>
+            </div>
+
+            <div class="event">
+                <div class="event-icon">☕</div>
+                <div class="event-title">Feria Internacional de AgroNegocios</div>
+                <div class="event-description">Apoyo al desarrollo e impulso en la búsqueda de mejoras a la cadena productiva de leche y quesos</div>
+            </div>
+
+            <div class="event">
+                <div class="event-icon">🎵</div>
+                <div class="event-title">Villa Gastronómica y Cultural</div>
+                <div class="event-description">Un brindis por lo mejor: quesos, buena comida y música de calidad</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
