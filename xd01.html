@@ -38,7 +38,7 @@
       position: fixed;
       top: 70px; /* Debajo del logo */
       width: 100%;
-      z-index: 1001; /* Asegúrate de que esté por encima del carrusel */
+      z-index: 999;
     }
 
     .navbar .nav-link {
@@ -47,8 +47,7 @@
 
     /* Carrusel */
     .carousel {
-      position: relative;
-      z-index: 0; /* Menor que el navbar para estar detrás */
+      margin-top: 140px; /* Para que no se superponga con el logo y el navbar */
     }
 
     .carousel-inner {
@@ -112,73 +111,6 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
-  </div>
-
-  <div class="event-somos">
-    <div class="event-container-somos">
-      <div class="event-somos-item">
-        <div class="event-icon-somos">
-          <img
-            src="Vistas/img/imgsomos/image.png"
-            alt="Concurso "
-          />
-          <!-- Reemplaza con tu imagen -->
-        </div>
-        <div class="event-title-somos">
-          Concurso Internacional de Quesos Artesanos
-        </div>
-        <div class="event-description-somos">
-          Historia, tradición y sabor: el mayor concurso de quesos
-          certificados del mundo
-        </div>
-      </div>
-      <div class="event-somos-item">
-        <div class="event-icon-somos">
-          <img
-            src="Vistas/img/imgsomos/image.png"
-            alt="Foro "
-          />
-          <!-- Reemplaza con tu imagen -->
-        </div>
-        <div class="event-title-somos">
-          Foro Internacional de Agroindustria y Productos de la Agricultura
-          Familiar
-        </div>
-        <div class="event-description-somos">
-          Valoración, reconocimiento y oportunidades de negocio para
-          productores
-        </div>
-      </div>
-      <div class="event-somos-item">
-        <div class="event-icon-somos">
-          <img
-            src="Vistas/img/imgsomos/image.png"
-            alt="Feria "
-          />
-          <!-- Reemplaza con tu imagen -->
-        </div>
-        <div class="event-title-somos">
-          Feria Internacional de AgroNegocios
-        </div>
-        <div class="event-description-somos">
-          Apoyo al desarrollo e impulso en la búsqueda de mejoras a la cadena
-          productiva de leche y quesos
-        </div>
-      </div>
-      <div class="event-somos-item">
-        <div class="event-icon-somos">
-          <img
-            src="Vistas/img/imgsomos/image.png"
-            alt="Villa"
-          />
-          <!-- Reemplaza con tu imagen -->
-        </div>
-        <div class="event-title-somos">Villa Gastronómica y Cultural</div>
-        <div class="event-description-somos">
-          Un brindis por lo mejor: quesos, buena comida y música de calidad
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Bootstrap JS -->
