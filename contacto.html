@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EL||QUESO</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- ICONS XDDD -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Vistas/css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo en lugar de texto -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="Vistas/img/cinta_logos/logo.png"
+            alt="Logo"
+            style="height: 60px"
+          />
+        </a>
+        <span class="navbar-titlenav">EL QUESO</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <!-- Centrado de los elementos de la lista -->
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll mx-auto"
+            style="--bs-scroll-height: 200px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Evento
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a class="dropdown-item" href="ubilugar.html"
+                    >Ubicacion del lugar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="dondealojarse.html"
+                    >Donde Alojarse</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="nuestroscio.html"
+                    >Nuestros Socios</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Concurso
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a class="dropdown-item" href="concurso.html">El Concurso</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="registro.html">Reguistro</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="ganadores.html">Ganadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="fotos.html">Foto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="noticias.html">Noticias</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <a
+              href="nuestro2024.html"
+              class="btn btn-outline-success-hmn"
+              style="
+                display: inline-block;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                width: 170px;
+                height: 49px;
+                border-width: 3px;
+                border-radius: 43px;
+                transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+              "
+            >
+              Nuestro 2025
+            </a>
+            <a
+              href="contacto.html"
+              class="btn-outline-success"
+              style="
+                display: inline-block;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                width: 160px;
+                height: 49px;
+                border-width: 3px;
+                border-radius: 43px;
+                transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+              "
+            >
+              Contacto
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div class="container-carru">
+      <div class="text-sectioncarru">
+        <h1>COPERATIVA DEL QUESO</h1>
+        <p>
+          Cada año, ExpoQueijo demuestra su importancia y expresividad al
+          público, seguidores, patrocinadores y socios, con un número cada vez
+          mayor de visitantes. En la primera edición asistieron al evento 21 mil
+          personas. El año siguiente llegamos a 25 mil personas recorriendo las
+          zonas, y en 2023 llegamos a 43 mil visitantes de paso por ExpoQueijo
+          Brasil.
+        </p>
+        <button><i class="bi bi-play-circle"></i> Ver Video</button>
+      </div>
+      <div class="image-sectioncarru">
+        <div class="image-slidercarru" id="imageSlidercarru">
+          <img src="Vistas/img/cinta_logos/logo1.png" alt="Imagen 1" />
+          <img src="Vistas/img/cinta_logos/logo1.png" alt="Imagen 2" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenedor de íconos -->
+    <div class="icons-vertical-container">
+      <div class="icons-vertical-item">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="bi bi-facebook"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <div class="icons-vertical-item">
+        <a href="https://twitter.com" target="_blank">
+          <i class="bi bi-twitter"></i>
+          <span>Twitter</span>
+        </a>
+      </div>
+
+      <div class="icons-vertical-item">
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div class="icons-vertical-item">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+      <div class="icons-vertical-item">
+        <a href="https://wa.me" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <div class="icons-vertical-item">
+        <a href="https://www.youtube.com" target="_blank">
+          <i class="bi bi-youtube"></i>
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="registro-contacto">
+        <!-- Información de contacto -->
+        <div class="informacion">
+          <h3>Ponerse en Contacto</h3>
+          <p><strong>Horario:</strong> Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+          <p><strong>Teléfono:</strong> 906 459 647</p>
+          <p><strong>Email:</strong> leoncioprado@gmail.com</p>
+          <p><strong>Ubicación:</strong> Leoncio Prado, Huánuco 10001</p>
+          <img src="Vistas/img/cinta_logos/logo.png" alt="Logo" class="logo" />
+        </div>
+  
+        <!-- Formulario de contacto -->
+        <div class="formulario">
+          <h3>Contáctenos</h3>
+          <form>
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+              autocomplete="name"
+              required
+            />
+  
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingrese su correo"
+              autocomplete="email"
+              required
+            />
+  
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              style="height: 60px"
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje"
+              autocomplete="off"
+              required
+            ></textarea>
+  
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+  
+        <!-- Google Maps -->
+        <div class="mapa">
+          <h3>Encuéntranos</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d982.5211030546634!2d-76.24322082083206!3d-9.926927912805358!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10feb2c5cf307ce2!2sGran%20Unidad%20Escolar%20Leoncio%20Prado!5e0!3m2!1ses-419!2spe!4v1611452714265!5m2!1ses-419!2spe"
+          >
+          </iframe>
+        </div>
+      </div>
+  
+
+
+    <!-- SINTA CARRUSEL -->
+    <div class="logo-carousel-new">
+      <a href="">
+        <img
+          src="Vistas/img/cinta_logos/logo1.png"
+          alt="Logo 1"
+          style="width: 110px"
+        />
+      </a>
+      <a href="">
+        <img
+          src="Vistas/img/cinta_logos/logo2.png"
+          alt="Logo 2"
+          style="width: 105px"
+        />
+      </a>
+      <a href="">
+        <img
+          src="Vistas/img/cinta_logos/logo3.png"
+          alt="Logo 3"
+          style="width: 110px"
+        />
+      </a>
+      <a href="">
+        <img src="Vistas/img/cinta_logos/logo4.png" alt="Logo 4" />
+      </a>
+      <a href="">
+        <img src="Vistas/img/cinta_logos/logo5.png" alt="Logo 5" />
+      </a>
+      <a href="">
+        <img src="Vistas/img/cinta_logos/logo6.png" alt="Logo 6" />
+      </a>
+      <a href="">
+        <img
+          src="Vistas/img/cinta_logos/logo7.png"
+          alt="Logo 7"
+          style="width: 115px"
+        />
+      </a>
+      <a href="">
+        <img src="Vistas/img/cinta_logos/logo8.png" alt="Logo 8" />
+      </a>
+      <a href="">
+        <img src="Vistas/img/cinta_logos/logo9.png" alt="Logo 9" />
+      </a>
+      <a href="">
+        <img
+          src="Vistas/img/cinta_logos/logo10.png"
+          alt="Logo 10"
+          style="width: 95px"
+        />
+      </a>
+    </div>
+
+    <!-- FOTERS -->
+    <footer class="footer bg-danger">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start"
+          >
+            <div class="information">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                INFORMACION
+              </h6>
+              <ul class="list-unstyled footer-link mt-4">
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Evento</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Concurso</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Ganadores</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-3 text-center text-sm-start"
+          >
+            <div class="resources">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                NOSOTROS
+              </h6>
+              <ul class="list-unstyled footer-link mt-4">
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Ubicacion del lugar</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Donde Alojarse</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Registro</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none fw-semibold"
+                    >Fotos</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 mt-4 col-lg-2 text-center text-sm-start"
+          >
+            <div class="social">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                REDES SOCIALES
+              </h6>
+              <ul class="list-inline my-4">
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-danger btn-sm btn btn-light mb-2"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-primary mb-2"
+                    ><i class="bi bi-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-success mb-2"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white btn-sm btn btn-success mb-2"
+                    ><i class="bi bi-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 mt-4 col-lg-4 text-center text-sm-start"
+          >
+            <div class="contact">
+              <h6 class="footer-heading text-uppercase text-white fw-bold">
+                CONTACTOS
+              </h6>
+              <a
+                href=""
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+              >
+                <i class="bi bi-pin-map fw-semibold"></i> Cathuayna , Jr
+                huanuco , 160055
+              </a>
+              <a
+                href="#"
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-telephone"></i> 999999999
+              </a>
+              <a
+                href="#"
+                class="text-white mb-1 text-decoration-none d-block fw-semibold"
+                ><i class="bi bi-envelope"></i> elqueso@gmail.com</a
+              >
+              <a href="" class="text-white text-decoration-none fw-semibold"
+                ><i class="bi bi-skype"></i> productelqueso</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center bg-dark text-white mt-4 p-1">
+        <p class="mb-0 fw-bold">EL QUESO 2025. <strong>© SistemHP</strong></p>
+      </div>
+    </footer>
+
+    <script src="vistas/js/script.js"></script>
+
+    <!-- ICONS XD -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

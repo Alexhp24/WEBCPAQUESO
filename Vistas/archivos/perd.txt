@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    
+    <link rel="stylesheet" href="Vistas/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar principal -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="Vistas/img/carrusel/logo.png" alt="El Queso" />
+        <span>EL QUESO</span>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Buscador..." />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+
+      <a href="#" class="contact-button">Contactos</a>
+
+      <!-- Ícono de menú para móviles (solo visible en pantallas pequeñas) -->
+      <button class="menu-icon d-md-none" id="menu-icon">
+        ☰
+      </button>
+    </nav>
+
+    <!-- Navbar secundaria (oculto por defecto en pantallas pequeñas) -->
+    <nav class="secondary-navbar d-none d-md-flex">
+      <a href="#">Eventos</a>
+      <a href="#">Cronograma</a>
+      <a href="#">Concurso</a>
+      <a href="#">Ganadores</a>
+      <a href="#">La feria</a>
+      <a href="#">El foro</a>
+      <a href="#">Pueblo gastronómico</a>
+      <a href="#">Fotos</a>
+    </nav>
+
+    <!-- Navbar secundaria para móviles (oculto por defecto) -->
+    <nav class="secondary-navbar-mobile d-md-none d-flex flex-column">
+      <a href="#">Eventos</a>
+      <a href="#">Cronograma</a>
+      <a href="#">Concurso</a>
+      <a href="#">Ganadores</a>
+      <a href="#">La feria</a>
+      <a href="#">El foro</a>
+      <a href="#">Pueblo gastronómico</a>
+      <a href="#">Fotos</a>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // JavaScript para mostrar el navbar secundario en móviles al presionar el ícono
+      const menuIcon = document.getElementById('menu-icon');
+      const secondaryNavbarMobile = document.querySelector('.secondary-navbar-mobile');
+
+      menuIcon.addEventListener('click', () => {
+        secondaryNavbarMobile.classList.toggle('d-none');
+      });
+    </script>
+  </body>
+</html>
